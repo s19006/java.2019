@@ -1,16 +1,25 @@
 import java.util.ArrayList;
-
+import java.util.Collections;
+import java.util.Arrays;
+import java.util.List;
 class Ex4{
 
 	public int [] ex4_1(int [] a){
-		
-		return a;
-
-	}
+        int[] x = new int[a.length];
+    for (int i = 0; i < x.length; i++) {
+        x[i] = a[i];
+            }
+    Arrays.sort(x);
+    return x;
+    }
 
 	public int [] ex4_2(int [] a){
-		
-		return a;
+        int[] z = new int[a.length];
+     for (int i = 0 ; i < z.length -1; i++) {
+         z[i] = a[i];
+     }
+     Collections.reverse(z);
+		return z;
 
 	}
 
